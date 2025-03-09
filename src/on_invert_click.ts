@@ -16,3 +16,9 @@ if (
 } else if (window.localStorage.getItem("prefers-color-scheme") === "light") {
   document.body.classList.add("inverted");
 }
+
+const invertThemeButton = document
+  .getElementById("invert-theme-button")
+  ?.addEventListener("click", () => {
+    onInvertClick();
+  });

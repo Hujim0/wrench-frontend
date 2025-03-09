@@ -13,7 +13,12 @@
 
     <link rel="stylesheet" href="/src/ascii_styles.css" />
     <script type="module" defer src="/src/on_invert_click.ts"></script>
-    <script type="module" defer src="/src/result.ts"></script>
+    <script
+      type="module"
+      defer
+      src="/src/result_empty_text_handlers.ts"
+    ></script>
+    <script type="module" defer src="/src/result_copy_buttons.ts"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,11 +59,9 @@
         >[variants]</a
       >
       <span class="grey separator-char">|</span>
-      <button onclick="onInvertClick()" class="blue hover">[invert]</button>
+      <button id="invert-theme-button" class="blue hover">[invert]</button>
       <span class="grey separator-char">|</span>
-      <button id="copy-link-button" onclick="copyLink()" class="white hover">
-        [copy_link]
-      </button>
+      <button id="copy-link-button" class="white hover">[copy_link]</button>
     </div>
 
     <div class="self-center flex flex-wrap gap-8 w-full p-4 mt-8 pr-8 pl-8">
