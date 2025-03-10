@@ -30,6 +30,22 @@ body.inverted {
   --c-yellow: #949700;
 }
 
+@theme {
+  --font: "IBM", monospace;
+
+  --color-custom-black: #1a1a1a;
+  --color-custom-white: #e1e1e1;
+  --color-custom-grey: #898989;
+  --color-custom-dark-grey: #222224;
+  --color-custom-purple: #b462ff;
+  --color-custom-fuschia: #ff45b4;
+  --color-custom-blue: #18b6ff;
+  --color-custom-green: #1beb9e;
+  --color-custom-orange: #ff9528;
+  --color-custom-orange-low-saturation: #a5692d;
+  --color-custom-yellow: #dddd25;
+}
+
 .orange-low-saturation {
   color: var(--c-orange-low-saturation);
   --c-current: var(--c-orange-low-saturation);
@@ -112,18 +128,8 @@ a:hover,
   font-style: italic;
 }
 
-.columns {
-  width: 100%;
-  column-count: 2;
-  column-gap: 1ch;
-}
-
 .noselect {
   user-select: none;
-}
-
-.break-anywhere {
-  line-break: anywhere;
 }
 
 html,
@@ -202,11 +208,11 @@ body.invert canvas {
 }
 
 .subtle-hover:hover {
-  background: transparent;
-  box-shadow: none;
-  cursor: pointer;
+  /* background: transparent; */
+  /* box-shadow: none; */
+  /* cursor: pointer; */
   opacity: 0.8;
-  color: currentColor;
+  /* color: currentColor; */
 }
 
 .title {
@@ -215,10 +221,6 @@ body.invert canvas {
 
 textarea {
   min-height: 20rem;
-}
-
-#comment {
-  min-height: 5rem;
 }
 
 .vim-folded {

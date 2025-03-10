@@ -13,16 +13,12 @@ const copyAssemblerButton = document.getElementById("copy-assembler-button");
 const copySimulationConfigButton = document.getElementById(
   "copy-simulation-config-button",
 );
-const copyLinkButton = document.getElementById("copy-link-button");
 
 copyAssemblerButton?.addEventListener("click", () => {
   copyTextAndChangeButtonText(copyAssemblerButton, assemblerCodeText);
 });
 copySimulationConfigButton?.addEventListener("click", () => {
   copyTextAndChangeButtonText(copySimulationConfigButton, simulationConfigText);
-});
-copyLinkButton?.addEventListener("click", () => {
-  copyTextAndChangeButtonText(copyLinkButton, window.location.href);
 });
 
 async function copyTextAndChangeButtonText(button: HTMLElement, text: string) {

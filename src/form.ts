@@ -1,4 +1,4 @@
-function Submit() {
+document.getElementById("submit-button")?.addEventListener("click", () => {
   let asmElement = document.getElementById("asm");
   if (asmElement !== null && asmElement instanceof HTMLTextAreaElement) {
     asmElement.value = asmElement.value.replace(new RegExp("\u00A0", "g"), " ");
@@ -20,4 +20,4 @@ function Submit() {
       form.reportValidity();
     }
   }
-}
+});
